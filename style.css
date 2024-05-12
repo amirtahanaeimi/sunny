@@ -1,0 +1,107 @@
+@font-face {
+    font-family: Barlow;
+    src: url("fonts/barlow-regular.ttf");
+  }
+  @font-face {
+    font-family: Fraunces;
+    src: url("fonts/fraunces-bold.ttf");
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  html {
+    font-family: Barlow;
+    font-size: 16px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Fraunces;
+  }
+  header {
+    background-image: url("images/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+  .logo {
+    height: 20px;
+  }
+  .nav {
+    display: flex;
+    list-style: none;
+  }
+  .nav li {
+    margin-right: 8px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .heading {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 2rem;
+  }
+.heading img{
+    margin-top: 20px;
+}
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 400px;
+  }
+  .text-box {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 1rem;
+  } 
+  .image-box {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 0 4rem 2rem;
+  }
+  
+  .box-image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+  
+  
+@media screen and (max-width:375px) {
+    .nav {
+        display: none;
+      }
+      .hamburger {
+        display: block;
+      }
+      .box{
+        width: 100%;
+      }
+    }    
+    
+    
